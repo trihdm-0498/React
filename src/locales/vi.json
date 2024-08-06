@@ -1,0 +1,18 @@
+{
+    "headerTitle": "Ngừng tìm kiếm sản phẩm — hãy tìm thấy nó.",
+    "searchPlaceholder": "Sản phẩm, thương hiệu, màu sắc, ...",
+    "filter": "Lọc",
+    "clearFilter": "Xóa bộ lọc",
+    "sortFeature": "Sắp xếp theo nổi bật",
+    "priceAsc": "Giá tăng dần",
+    "priceDesc": "Giá giảm dần",
+    "currency": "VND",
+    "category": "Danh mục",
+    "brand": "Thương hiệu",
+    "brandSearch": "Tìm kiếm thương hiệu",
+    "price": "Giá",
+    "freeShip": "Miễn phí vận chuyển",
+    "shipDesc": "Hiển thị trên các mặt hàng được miễn phí vận chuyển",
+    "rate": "Đánh giá",
+    "show": " sản phẩm mỗi trang"
+}

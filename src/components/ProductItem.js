@@ -1,6 +1,8 @@
 import React from 'react';
+import en from '../locales/en.json';
+import vi from '../locales/vi.json';
 
-const ProductItem = ({ image, altText, category, name, description, price, rating }) => {
+const ProductItem = ({ image, altText, category, name, description, price, rating, isEnglish }) => {
   return (
     <div className="relative p-4 rounded-lg shadow-sm">
       <article className="text-customBlack text-sm leading-5">
@@ -13,7 +15,7 @@ const ProductItem = ({ image, altText, category, name, description, price, ratin
           <p className="mt-[2px] flex justify-start items-start">{description}</p>
           <footer className="mt-[10px]">
             <p className="flex">
-                <span className="text-customYellow text-[11px] font-semibold mr-1">$</span>
+                <span className="text-customYellow text-[11px] font-semibold mr-1">{isEnglish ? vi.currency : en.currency}</span>
                 <strong>{price}</strong>
                 <span className="border border-[#e2a400]/50 rounded-sm ml-1 px-1 text-customYellow text-[11px] font-semibold flex items-center justify-center">
                 <img src={`${process.env.PUBLIC_URL}/images/star.svg`}/>
