@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { brandsEn } from "../services/mockAPI-en";
 import en from '../locales/en.json';
 import vi from '../locales/vi.json';
@@ -28,12 +28,14 @@ export function Brand({ isEnglish, onBrandClick }) {
   };
 
   return (
-    <div className="p-4 w-64">
-      <h3 className="text-gray-800 font-semibold mb-4 text-left">{isEnglish ? vi.brand : en.brand}</h3>
+    <div className="p-4 w-full sm:w-64">
+      <h3 className="text-gray-800 font-semibold mb-4 text-left text-base sm:text-lg">
+        {isEnglish ? vi.brand : en.brand}
+      </h3>
       <div className="mb-4">
         <input
           type="text"
-          className="w-full px-3 py-2 pl-10 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 sm:pl-10 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base placeholder:text-xs sm:placeholder:text-sm"
           placeholder={isEnglish ? vi.brandSearch : en.brandSearch}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -41,10 +43,10 @@ export function Brand({ isEnglish, onBrandClick }) {
       </div>
       <div className="space-y-2">
         {filteredBrands.map((brand) => (
-          <div key={brand.name} className="flex items-center" onClick={() => handleBrandClick(brand.name)}>
+          <div key={brand.name} className="flex items-center text-sm sm:text-base" onClick={() => handleBrandClick(brand.name)}>
             <input type="checkbox" className="mr-2" />
             <span className="text-gray-800">{brand.name}</span>
-            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded-md ml-2">
+            <span className="bg-gray-100 text-gray-800 text-xs sm:text-sm font-semibold px-2 py-1 rounded-md ml-2">
               {brand.count}
             </span>
           </div>
@@ -53,4 +55,5 @@ export function Brand({ isEnglish, onBrandClick }) {
     </div>
   );
 }
+
 export default Brand;

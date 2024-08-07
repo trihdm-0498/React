@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 import en from '../locales/en.json';
 import vi from '../locales/vi.json';
 
-const SearchBar = ({ onSearch,SearchItem, isEnglish }) => {
+const SearchBar = ({ onSearch, SearchItem, isEnglish }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
-    SearchItem(e.target.value)
+    SearchItem(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearchTerm(e.target.value);
     onSearch(searchTerm);
   };
   
   return (
-    <div className="relative w-[740px] h-[64px]">
+    <div className="relative w-full max-w-[80%] h-[64px]">
       <form onSubmit={handleSubmit} className="flex items-center h-full" role="search" noValidate>
         <input
           className="rounded-md pt-1 px-12 pb-0 pl-16 h-full w-full border-gray-300 active:border-customYellow text-customBlack"

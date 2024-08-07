@@ -206,6 +206,7 @@ export const productsEn = [
         price: "89.99",
         rating: "4",
         brand: "Sony",
+        shipping: "yes"
     },
 ];
 

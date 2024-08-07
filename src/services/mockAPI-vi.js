@@ -206,6 +206,7 @@ export const productsVi = [
         price: "2.100.000",
         rating: "4",
         brand: "Sony",
+        shipping: "yes"
     },
 ];
 

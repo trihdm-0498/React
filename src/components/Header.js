@@ -21,7 +21,7 @@ const Header = ({ isEnglish, Search }) => {
       <div className="header-background bg-cover bg-center bg-repeat bg-scroll bg-clip-border bg-origin-padding bg-gradient from-[#fbc300] to-[#c98a00]">
         <div className="header-content text-white flex flex-col justify-center items-center">
           <AlgoliaSvg />
-          <h1 className="mb-[38px] mt-[38px] text-[38px] font-light">{isEnglish ? vi.headerTitle : en.headerTitle}</h1>
+          <h1 className="mb-8 mt-8 text-2xl sm:text-3xl md:text-4xl font-light">{isEnglish ? vi.headerTitle : en.headerTitle}</h1>
           <SearchBar onSearch={handleSearch} SearchItem={handleSearchChange} isEnglish={isEnglish}/>
         </div>
       </div>

@@ -6,8 +6,8 @@ const ProductItem = ({ image, altText, category, name, description, price, ratin
   return (
     <div className="relative p-4 rounded-lg shadow-sm">
       <article className="text-customBlack text-sm leading-5">
-        <header className="h-[174px] w-[174px] flex items-center justify-center m-auto">
-          <img src={image} alt={altText} className="h-auto max-h-full max-w-full" />
+        <header className="h-[174px] w-full max-w-[174px] flex items-center justify-center m-auto">
+          <img src={image} alt={altText} className="w-full h-[100px] max-h-full object-contain" />
         </header>
         <div className="break-words flex flex-col justify-start items-start">
           <p className="text-customBlack opacity-70 uppercase mb-2 text-xs font-semibold leading-none">{category}</p>
