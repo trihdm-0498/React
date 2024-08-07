@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false,
@@ -10,7 +9,7 @@ module.exports = {
       },
       borderColor: {
         customYellow: '#e2a400',
-      }
+      },
     },
   },
   variants: {

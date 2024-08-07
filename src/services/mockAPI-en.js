@@ -15,7 +15,7 @@ const sp14 = process.env.PUBLIC_URL + '/images/sp14.jpg';
 const sp15 = process.env.PUBLIC_URL + '/images/sp15.jpg';
 const sp16 = process.env.PUBLIC_URL + '/images/sp16.jpg';
 
-export const products = [
+export const productsEn = [
     {
         id: 1,
         image: sp1,
@@ -206,5 +206,110 @@ export const products = [
         price: "89.99",
         rating: "4",
         brand: "Sony",
+        shipping: "yes"
     },
 ];
+
+export const categoriesEn = [
+    {
+        title: "Appliances",
+        subcategories: ["Air Purifiers", "Fans", "Handheld & Stick Vacuums", "Heaters", "Humidifiers"],
+    },
+
+    {
+        title: "Audio",
+        subcategories: ["Auxiliary Input Cables", "Cables & Chargers", "Headphones", "Home Audio"],
+    },
+
+    {
+        title: "Cameras & Camcorders",
+        subcategories: ["Binoculars", "Camcorder Accessories", "Digital Camera Accessories", "Memory Cards"],
+    },
+
+    {
+        title: "Car Electronics & GPS",
+        subcategories: ["Amp Installation Parts", "Audiories", "Car Safety & Convenience", "Deck Installation Parts"],
+    },
+
+    {
+        title: "Cell Phones",
+        subcategories: ["All Cell Phones with Plans", "Cell Phone Accessories", "Mobile Broadband", "Prepaid Phones", "Refurbished Phones"],
+    },
+
+    {
+        title: "Computers & Tablets",
+        subcategories: ["All Desktops", "Cables & Connectors", "Hard Drives & Storage", "Laptop Accessories", "Laptops"],
+    },
+
+    {
+        title: "Health, Fitness & Beauty",
+        subcategories: ["Activity Tracker Bands", "Assistive Technology", "Blood Pressure Monitors", "Exercise Equipment", "Fitness & GPS Watches"],
+    },
+
+    {
+        title: "Office & School Supplies",
+        subcategories: ["Binders, Folders & Filing", "Organizers & Storage", "Pens, Pencils & Markers", "Printer Ink & Toner"],
+    },
+
+    {
+        title: "TV & Home Theater",
+        subcategories: ["Blu-ray & DVD Players", "Projectors & Screens", "TV Antennas", "TV Mounts", "TV Stands"],
+    },
+
+    {
+        title: "Video Games",
+        subcategories: ["Funko Collectibles", "Game Guides", "PC Gaming", "PlayStation 4"],
+    }
+];
+
+export const brandsEn = [
+    { 
+        name: "Apple", 
+        count: 20 
+    },
+
+    { 
+        name: "Insignia™", 
+        count: 18 
+    },
+
+    { 
+        name: "Metra",
+        count: 15 
+    },
+
+    { 
+        name: "HP", 
+        count: 12 
+    },
+
+    { 
+        name: "Samsung", 
+        count: 10 
+    },
+
+    { 
+        name: "Sony", 
+        count: 100 
+    },
+
+    { 
+        name: "Incipio", 
+        count: 1 
+    },
+
+    { 
+        name: "Canon", 
+        count: 50 
+    },
+
+    { 
+        name: "Speck",
+        count: 3 
+    },
+
+    { 
+        name: "OtterBox", 
+        count: 14 
+    },
+]
